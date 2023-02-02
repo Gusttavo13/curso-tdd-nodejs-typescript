@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:staged": "vitest --run",
+    "test:staged": "vitest --run --passWithNoTests",
     "eslint": "eslint --fix",
     "coverage": "vitest run --coverage"
   },
