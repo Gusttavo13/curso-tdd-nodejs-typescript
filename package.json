@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "test:staged": "vitest",
+    "eslint": "eslint --fix",
     "coverage": "vitest run --coverage"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run eslint",
+      "npm run test:staged",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "",
